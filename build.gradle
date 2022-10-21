@@ -7,14 +7,18 @@ group 'qa.guru'
 version '1.0'
 
 allure {
-    report {//секция репорта
+    //секция репорта
+    report {
         version.set("2.19.0")
     }
-    adapter { // отвечате за появление папочки build/allure-results
+    // отвечате за появление папочки build/allure-results
+    adapter {
         aspectjWeaver.set(true)// обработка аннотации @Step
         frameworks {
-            junit5 { //название фреймворка
-                adapterVersion.set("2.19.0") // версия интеграции фреймворка и Allure
+            //название фреймворка
+            junit5 {
+                // версия интеграции фреймворка и Allure
+                adapterVersion.set("2.19.0")
             }
         }
     }
