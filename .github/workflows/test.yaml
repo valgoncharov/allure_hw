@@ -1,10 +1,10 @@
 name: Test
 
 on: [push]
+
 jobs:
   test:
   # где запускаю
-
     runs-on: ubuntu-latest
     # что делаем
     steps:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       # настраиваем java
       - uses: actions/setup-java@v3
-          with:
+
             distribution: 'zulu' # See 'Supported distributions' for available options
             java-version: '8' # у меня указан 11 если что поменять, и попробовать сделать с java 17
         # запускаем тесты
