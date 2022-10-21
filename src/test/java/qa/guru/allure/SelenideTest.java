@@ -22,7 +22,7 @@ public class SelenideTest {
         Configuration.browserSize = "1920x1080";
     }
 
-    @DisplayName("Example allure with Artem")
+    //@DisplayName("Example allure with Artem")
     @Test
     public void testIssueSearch(){
         SelenideLogger.addListener("allure", new AllureSelenide());

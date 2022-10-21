@@ -26,7 +26,7 @@ public class StepsTest {
         Configuration.browserSize = "1920x1080";
     }
 
-    @DisplayName("Example allure with Artem")
+    //@DisplayName("Example allure with Artem")
     @Test
     public void testLambdaStep(){
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -54,7 +54,18 @@ public class StepsTest {
         step("Проверяем наличие Issue с номером " + ISSUE, () ->{
             $(withText("#" + ISSUE)).should(Condition.exist);
         });
+    }
 
+    @Test
+    public void testAnnotatedStep(){
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        WebSteps steps = new WebSteps();
+
+        steps.openMainPage();;
+        steps.searchForRepository(REPOSITORY);
+        steps.clickOnRepositoryLink(REPOSITORY);
+        steps.openIssuesTab();
+        steps.shouldSeeIssueWithNumber(ISSUE);
 
     }
 }
