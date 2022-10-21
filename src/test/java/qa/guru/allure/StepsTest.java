@@ -19,12 +19,12 @@ public class StepsTest {
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int ISSUE = 80;
 
-    @BeforeAll
-    static void configure(){
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-        Configuration.browser = "chrome";
-        Configuration.browserSize = "1920x1080";
-    }
+//    @BeforeAll
+//    static void configure(){
+//        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+//        Configuration.browser = "chrome";
+//        Configuration.browserSize = "1920x1080";
+//    }
 
     //@DisplayName("Example allure with Artem")
     @Test

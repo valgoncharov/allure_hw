@@ -15,12 +15,12 @@ import static org.openqa.selenium.By.linkText;
 
 public class SelenideTest {
 
-    @BeforeAll
-    static void configure(){
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-        Configuration.browser = "chrome";
-        Configuration.browserSize = "1920x1080";
-    }
+//    @BeforeAll
+//    static void configure(){
+//        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+//        Configuration.browser = "chrome";
+//        Configuration.browserSize = "1920x1080";
+//    }
 
     //@DisplayName("Example allure with Artem")
     @Test

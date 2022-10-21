@@ -9,12 +9,12 @@ import org.junit.jupiter.api.Test;
 
 public class LabelsTest {
 
-    @BeforeAll
-    static void configure(){
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-        Configuration.browser = "chrome";
-        Configuration.browserSize = "1920x1080";
-    }
+//    @BeforeAll
+//    static void configure(){
+//        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+//        Configuration.browser = "chrome";
+//        Configuration.browserSize = "1920x1080";
+//    }
 
     @Test
     @Feature("Issue  в репозитории")
